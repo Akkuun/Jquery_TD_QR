@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<label>identifiant</label>
+<input type="text" name="envoyer" id="envoie" onblur="champsfocus(this)">
+<label>mail</label>
+<input type="text" id="=toto">
+<input type="button" onclick="verifi(this)">
+
+<script type="text/javascript">
+    var verifa = [true, true, true]
+
+    function champsfocus(lechamp) {
+        if (lechamp.value===""){
+            lechamp.style.backgroundColor = "red";
+
+        }
+        else{
+            lechamp.style.backgroundColor="green";
+           verifa=[false,true,true]
+        }
+
+    }
+
+function verifi(lechamp){
+alert(verifa)
+}
+</script>
+</body>
+</html>

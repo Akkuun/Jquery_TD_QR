@@ -1,0 +1,181 @@
+body {
+
+    background-image: linear-gradient(to bottom, #798291, #7782b0, #8a7dc8, #af6fd4, #de54cf);
+    font-family: Verdana, Geneva, sans-serif;
+    height: 100%;
+    font-size: 17px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#titre {
+
+    text-align: center;
+    font-size: 30px;
+}
+
+#carre {
+    border-radius: 100px 100px 100px 100px;
+    border: 6px solid black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+
+    justify-items: center;
+    align-items: center;
+
+
+}
+
+#compteurb {
+
+position: center;
+    margin-top: 10%;
+    margin-left: 45%;
+    width: 125px;
+    height: 50px;
+    color: black;
+
+}
+
+#carrecompteur {
+    height: 50px;
+    width: 100px;
+    background-color: #555;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    display: flex;
+    margin-top: 5%;
+    margin-left: 46%;
+border-radius: 50px;
+
+}
+
+.qr1 {
+    display: flex;
+    flex-direction: row;
+
+    flex-shrink: 1;
+
+    -webkit-animation: fadein 2s;
+}
+@-webkit-keyframes fadein { /* sur Safari et Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+input:hover{
+
+
+    animation: bounce 1s;
+
+}
+@keyframes bounce {
+    0%, 20%, 60%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    40% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+
+    80% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+
+
+.bq {
+    background-color: transparent;
+
+}
+
+.br {
+    background-color: transparent;
+}
+
+
+input {
+    background-color: transparent;
+    color: brown;
+    font-size: 25px;
+    font-family: "Arial Black";
+    width: 240px;
+    height: 100%;
+    border-radius: 50px;
+}
+label{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+}
+
+
+input:hover {
+
+
+}
+
+html {
+    background-image: linear-gradient(to bottom, #798291, #7782b0, #8a7dc8, #af6fd4, #de54cf);
+}
+
+#deleteb{
+
+margin-top: 5%;
+    align-self: center;
+width: 60px;
+}
+
+
+
+
+@media screen and (max-width: 990px) {
+
+    .qr1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input {
+        width: 240px;
+        height: 40px;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        font-size: 15px;
+    }
+
+    #compteurb {
+        margin-top: 10%;
+        margin-left: 40%;
+    }
+    #carrecompteur{
+        margin-left: 42%;
+    }
+    #deleteb{
+        justify-content: center;
+    }
+}
+
